@@ -62,8 +62,8 @@ pub fn build(b: *std.Build) !void {
     supermd.addImport("ziggy", ziggy);
 
     const zeit = b.dependency("zeit", mode).module("zeit");
-    const syntax = b.dependency("flow-syntax", mode);
-    const ts = syntax.builder.dependency("tree-sitter", mode);
+    const syntax = b.dependency("flow_syntax", mode);
+    const ts = syntax.builder.dependency("tree_sitter", mode);
     const treez = ts.module("treez");
     const wuffs = b.dependency("wuffs", mode);
 
