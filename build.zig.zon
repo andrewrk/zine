@@ -51,5 +51,6 @@
         "LICENSE",
         "README.md",
         "src",
+        "tests",
     },
 }
